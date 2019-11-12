@@ -3,7 +3,9 @@
     id: contact.id,
     first_name: contact.first_name,
     last_name: contact.last_name,
-    phone_number: contact.phone_number,
+    phone_number: contact.country_code,
     email_address: contact.email_address,
+    full_name: contact.full_name,
+    updated_at: contact.friendly_updated_at,
   }
 end
