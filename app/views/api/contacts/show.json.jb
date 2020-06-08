@@ -1,10 +1,2 @@
 
-{
-  id: @contact.id,
-  first_name: @contact.first_name,
-  last_name: @contact.last_name,
-  full_name: @contact.full_name,
-  phone_number: @contact.country_code,
-  email_address: @contact.email_address,
-  updated_at: @contact.friendly_updated_at,
-}
+render partial: "contact.json.jb", locals: { contact: @contact }

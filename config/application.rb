@@ -1,4 +1,4 @@
-require_relative 'boot'
+require_relative "boot"
 
 require "rails"
 # Pick the frameworks you want:
@@ -21,6 +21,7 @@ Bundler.require(*Rails.groups)
 
 module ContactsApp
   class Application < Rails::Application
+    config.time_zone = "Central Time (US & Canada)"
     config.generators.assets = false
     config.generators.helper = false
     # Initialize configuration defaults for originally generated Rails version.
